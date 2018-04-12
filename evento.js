@@ -7,6 +7,14 @@ var teclas = {
 
 document.addEventListener("keyup", dibujarTeclado);
 
+function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo) {
+ lienzo.beginPath();
+ lienzo.strokeStyle = color;
+ lienzo.moveTo(xinicial, yinicial);
+ lienzo.stroke();
+ lienzo.closePath();
+}
+
 function dibujarTeclado(event) {
   console.log(event);
 } 
