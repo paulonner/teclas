@@ -5,11 +5,10 @@ var teclas = {
   RIGHT: 39
 }
 
-document.addEventListener('keyup', dibujarTeclado);
+document.addEventListener('keydown', dibujarTeclado);
 var cuadrito = document.getElementById('area_de_dibujo');
 var papel = cuadrito.getContext('2d');
-var x = 150;
-var y = 150;
+var x = 150, y = 150;
 
 dibujarLinea('red', 149, 149, 151, 151, papel);
 
